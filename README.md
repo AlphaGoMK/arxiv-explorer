@@ -34,5 +34,5 @@ It will output depend on date you search:
 ```
 
 ### FAQ
-1. Get `ConnectionResetError: [Errno 54] Connection reset by peer` error:
+1. Get `ConnectionResetError: [Errno 54] Connection reset by peer` error  
   A: Run command again.
