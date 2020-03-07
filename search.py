@@ -83,7 +83,7 @@ if __name__ == '__main__':
         soup = BeautifulSoup(requests.get(url).text, 'lxml')
         tmp_dict = find_paper_info(soup, query_keys, arg.find_abs)
         res_dict = {**res_dict, **tmp_dict}
-    with open('result%s.txt' % '_'.join(query_keys), 'w+') as f:
+    with open('result_%s.txt' % '_'.join(query_keys), 'w+') as f:
         for idx, paper_id in enumerate(res_dict.keys()):
             f.write('%d: %s\n' % (idx+1, res_dict[paper_id][0]))
             f.write('    %s\n' % res_dict[paper_id][1])
